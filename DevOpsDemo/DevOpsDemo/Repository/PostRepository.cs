@@ -9,7 +9,8 @@ namespace DevOpsDemo.Repository
             var posts = new List<PostViewModel> { 
                 new PostViewModel() { PostId = 101, Title = "DevOps Demo Title 1", Description="DevOps Demo Title 1", Author="Ajoy"  },
                 new PostViewModel() { PostId = 102, Title= "DevOps Demo Title 2", Description = "DevOps Demo Title 2", Author="Kumar"  },
-                new PostViewModel() { PostId = 103, Title= "DevOps Demo Title 3", Description = "DevOps Demo Title 3", Author="Goch"  }
+                new PostViewModel() { PostId = 103, Title= "DevOps Demo Title 3", Description = "DevOps Demo Title 3", Author="Goch"  },
+                new PostViewModel() { PostId = 104, Title= "DevOps Demo Title 4", Description = "DevOps Demo Title 4", Author="Jaci"  }
             };
             return posts;
         }
