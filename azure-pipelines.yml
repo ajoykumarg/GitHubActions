@@ -15,7 +15,14 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'build'
-    projects: 'https://github.com/ajoykumarg/GitHubActions/blob/DevOpsDemoBranch/DevOpsDemo/DevOpsDemo/DevOpsDemo.csproj'
+    command: 'test'
+    projects: '**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/*.csproj'
