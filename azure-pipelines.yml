@@ -18,4 +18,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'https://github.com/ajoykumarg/GitHubActions/tree/DevOpsDemoBranch/DevOpsDemo'
+    projects: 'https://github.com/ajoykumarg/GitHubActions/blob/DevOpsDemoBranch/DevOpsDemo/DevOpsDemo/DevOpsDemo.csproj'
